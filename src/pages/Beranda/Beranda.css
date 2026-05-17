@@ -1,0 +1,173 @@
+/* Mengambil font Quicksand agar bulat & friendly seperti di Figma */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Container utama tiruan dari Frame mobile di Figma */
+.app-container {
+    width: 100%;
+    max-width: 412px; /* Ukuran standar screen HP */
+    background: linear-gradient(180deg, #FFA494 0%, #FFEBA6 100%);
+    min-height: 850px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 24px;
+    margin: 20px auto;
+    position: relative;
+}
+
+/* --- Header & Navbar --- */
+.header-card {
+    width: 100%;
+    background-color: #ffffff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    margin-bottom: 30px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling gambar logo supaya pas di container */
+.logo-img {
+    max-width: 180px; 
+    height: auto;
+    object-fit: contain;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #B26A44; /* Cokelat navbar */
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.navbar a.active {
+    text-decoration: underline; /* Penanda halaman aktif sesuai gambar */
+}
+
+/* --- Teks Konten Utama --- */
+.hero-text {
+    text-align: center;
+    color: #C04E40; /* Warna teks utama merah bata */
+    margin-bottom: 30px;
+}
+
+.hero-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-desc {
+    font-size: 11.5px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* --- Layout Grid Global --- */
+.section {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.section-title {
+    font-size: 11px;
+    color: #C04E40;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.card {
+    padding: 14px 4px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Warna Fitur Utama */
+.btn-praktis { background-color: #5C3A21; color: #E59866; }
+.btn-hemat { background-color: #F4D03F; color: #C04E40; }
+.btn-cepat { background-color: #A9DFBF; color: #196F3D; }
+
+/* Warna Kategori Resep */
+.btn-sarapan { background-color: #A68A64; color: #402A18; }
+.btn-siang { background-color: #34495E; color: #ffffff; }
+.btn-malam { background-color: #B19A4A; color: #ffffff; }
+.btn-minuman { background-color: #E67E22; color: #ffffff; }
+
+/* Warna Resep Populer */
+.btn-mie { background-color: #FADBD8; color: #C04E40; }
+.btn-nasgor { background-color: #FDEBD0; color: #C04E40; }
+.btn-ayam { background-color: #FCF3CF; color: #C04E40; }
+.btn-telur { background-color: #D5F5E3; color: #196F3D; }
+
+/* --- Button CTA & Footer --- */
+.cta-button {
+    background-color: #2ECC71; /* Warna hijau tombol jelajahi resep */
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer-note {
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: auto; /* Memaksa footer berada di paling bawah */
+}
