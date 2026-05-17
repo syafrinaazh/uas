@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F5F5F5; /* Warna background abu muda sesuai Figma */
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px;
+}
+
+.login-card {
+    background-color: #FFC4B4; /* Warna peach/pink lembut kartu */
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    padding: 40px;
+    gap: 30px;
+}
+
+/* Sisi Kiri (Logo) */
+.login-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-logo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Sisi Kanan (Form) */
+.login-right {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-welcome {
+    text-align: center;
+    color: #B26A44; /* Warna cokelat teks */
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.login-welcome span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FFF;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    color: #B26A44;
+    text-decoration: none;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.btn-login {
+    background-color: #C04E40; /* Warna merah bata tombol masuk */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #a84337;
+}
+
+/* Responsif untuk HP agar menumpuk ke bawah */
+@media (max-width: 600px) {
+    .login-card {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .login-logo {
+        max-width: 150px;
+    }
+}

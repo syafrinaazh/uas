@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+.dash-wrapper {
+    background-color: #F5F5F5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.dash-outer-frame {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 850px;
+}
+
+.dash-card {
+    background: linear-gradient(180deg, #E98B8B 0%, #FCE09B 100%);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* 1. Bar Profil Kuning */
+.profile-bar-top {
+    background-color: #FCD87F;
+    border-radius: 20px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-info-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #A35738;
+}
+
+.profile-pic {
+    background: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.profile-badge {
+    background-color: #EFA834;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+.profile-icons-right {
+    display: flex;
+    gap: 12px;
+}
+
+/* 2. Banner Putih Utama */
+.main-banner-box {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.banner-logo {
+    height: 70px;
+    width: auto;
+}
+
+.banner-nav {
+    display: flex;
+    background-color: #9E5434;
+    padding: 6px;
+    border-radius: 20px;
+    gap: 5px;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-around;
+}
+
+.nav-btn {
+    background: transparent;
+    border: none;
+    color: #FFC4B4;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-btn.active {
+    color: #FFFFFF;
+    background-color: #BD5B32;
+    border-radius: 15px;
+}
+
+/* 3. Search Bar */
+.search-box-green {
+    display: flex;
+    background-color: #7BB37B;
+    border-radius: 8px;
+    padding: 4px 8px;
+    width: 100%;
+    max-width: 450px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.search-field {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 6px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.search-field::placeholder { color: #E2F0E2; }
+.search-btn-icon { background: transparent; border: none; color: white; cursor: pointer; }
+
+/* 4. Kategori Pil */
+.categories-horizontal {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cat-pill {
+    background-color: #FFFFFF;
+    border: 1px solid #EFA834;
+    color: #A35738;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 11px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* 5. Flex Konten Utama */
+.main-content-flex {
+    display: flex;
+    gap: 20px;
+}
+
+.left-recipes {
+    flex: 1.8;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section-title-brown {
+    color: #A35738;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* STYLING UTAMA BAR BARU YANG BISA DIKLIK */
+.recipe-clickable-bar {
+    display: flex;
+    align-items: center;
+    background-color: #F19E8E; /* Warna dasar pink figma */
+    border: none;
+    border-radius: 12px;
+    padding: 0; /* padding dikosongkan agar flex image menempel penuh */
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.recipe-clickable-bar:hover {
+    transform: translateY(-2px); /* Efek naik sedikit saat disorot mouse */
+    background-color: #EB8D7B;
+}
+
+/* Wadah Gambar Sisi Kiri */
+.recipe-img-container {
+    width: 90px;
+    height: 70px;
+    overflow: hidden;
+    background-color: #DDD;
+}
+
+.recipe-real-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memaksa gambar mengisi penuh area kotak tanpa penyok */
+}
+
+/* Wadah Teks Sisi Kanan (Putih di dalam Bar Pink) */
+.recipe-text-container {
+    flex: 1;
+    background-color: #FFFFFF; /* Latar belakang teks berwarna putih sesuai contoh Figma */
+    height: 100%;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    text-align: left;
+}
+
+.recipe-name-text {
+    color: #A35738;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn-load-more {
+    background-color: #7BB37B;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Sisi Kanan Sidebar */
+.right-sidebar { flex: 1; }
+.sidebar-box { background-color: #FFFFFF; border-radius: 12px; padding: 15px; border: 1px solid #FCD87F; }
+.sidebar-title { color: #A35738; font-size: 12px; font-weight: 700; margin-bottom: 12px; border-bottom: 2px solid #FCD87F; padding-bottom: 4px; }
+.snack-item { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.snack-pic { font-size: 18px; }
+.snack-item p { margin: 0; font-size: 11px; font-weight: 600; color: #666; }
+.btn-lihat-semua { background: transparent; border: none; color: #EFA834; font-weight: 700; font-size: 11px; cursor: pointer; width: 100%; text-align: right; font-family: 'Quicksand', sans-serif; }
+
+/* 6. Footer Promo */
+.footer-promo-banner {
+    background-color: #FFF2CC;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #FCD87F;
+}
+
+.promo-text-side h4 { color: #A35738; font-size: 13px; margin: 0 0 8px 0; font-weight: 700; }
+.btn-promo-green { background-color: #7BB37B; color: white; border: none; padding: 6px 12px; border-radius: 6px; font-size: 11px; font-weight: 700; cursor: pointer; font-family: 'Quicksand', sans-serif; }
+.promo-image-side { font-size: 35px; }
+
+@media (max-width: 650px) {
+    .main-content-flex { flex-direction: column; }
+}

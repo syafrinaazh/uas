@@ -1,6 +1,9 @@
 import React from 'react';
 import './Beranda.css';
 
+// KITA IMPORT GAMBARNYA DARI FOLDER ASSETS
+import logoImg from '../../assets/logo.jpeg'; 
+
 export default function Beranda() {
   return (
     <div className="app-container">
@@ -8,8 +11,8 @@ export default function Beranda() {
       {/* Header & Navbar Box */}
       <div className="header-card">
         <div className="logo-container">
-          {/* Taruh file gambar logomu di folder public, lalu ganti nama file di bawah sesuai nama logomu */}
-          <img src="/logo.png" alt="Logo Kost Cook Studio" className="logo-img" />
+          {/* TAG IMAGES SEKARANG MEMANGGIL VARIABEL logoImg */}
+          <img src={logoImg} alt="Logo Kost Cook Studio" className="logo-img" />
         </div>
         <div className="navbar">
           <a href="#beranda" className="active">beranda</a>
